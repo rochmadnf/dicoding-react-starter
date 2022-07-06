@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createElement } from "react";
+import { createRoot } from 'react-dom/client'
+const heading = createElement('h1', null, 'Biodata Perusahaan')
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const listItemOne = createElement('li', null, 'Nama: Dicoding Indonesia')
+const listItemTwo = createElement('li', null, "Bidang: Education");
+const listItemThree = createElement('li', null, "Tagline: Decode Ideas, Discover Potential.");
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const unOrderedList = createElement('ul', null, [listItemOne, listItemTwo, listItemThree]);
+
+const container = createElement('div', null, [heading, unOrderedList])
+
+const root = createRoot(document.getElementById('root'));
+
+root.render(container)
