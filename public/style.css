@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: "Inter", sans-serif;
+   background-color: whitesmoke;
+}
+
+img {
+  width: 100%;
+}
+
+.contact-app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.contact-app h1 {
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  border: 1px dashed black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-item__image img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.contact-item__body {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 1px solid #aaa;
+  flex: 1;
+}
+
+.contact-item__title {
+  padding: 4px 0;
+}
+
+.contact-item__username {
+  font-weight: lighter;
+}
+
+.contact-item__delete {
+  padding: 0.5rem;
+  font-size: 18px;
+  background-color: orangered;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-input {
+  border: 1px dashed black;
+  padding: 1rem;
+  margin: 14px 0;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.contact-input input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-input button {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
